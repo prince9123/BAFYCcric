@@ -15,7 +15,8 @@ app.intent("Total runs", conv => {
     const cricketers = conv.parameters["cricketers"];
     const date = conv.parameters["date"];
     // this sends a response back to userwhich one
-    conv.ask("You said " + cricketers + date) ;//It ask for deploying 
+    conv.ask("You said " + cricketers + date) ;//It ask for deploying
+    conv.ask("You mean "+ cricketers +date) ;//new dialog
 
     //use conv.close to end the conversation
     // 5 min lag sakta hai deploy hone ke baad update hone me
